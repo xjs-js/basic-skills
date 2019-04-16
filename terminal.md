@@ -17,3 +17,9 @@ cal 1 2019                     // 查看2019年1月日历
 
 
 
+```
+networksetup -setv6off Wi-Fi	 // 关闭ipv6
+```
+
+
+
