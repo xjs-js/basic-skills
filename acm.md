@@ -32,6 +32,15 @@ long double floor (long double arg);
 float sqrt (float arg);
 double sqrt (double arg);
 long double sqrt (long double arg);
+
+// Returns base raised to the power exponent:
+// base^exponent 
+double pow (double base, double exponent);
+
+// Returns the absolute value of parameter n ( /n/ ).
+          int abs (          int n);
+     long int abs (     long int n);
+long long int abs (long long int n);
 ```
 
 
@@ -48,7 +57,46 @@ template< class T >
 const T& max( const T& a, const T& b);
 ```
 
+### string
 
+```cpp
+// The substring is the portion of the object that starts at character position pos and spans len characters (or until the end of the string, whichever comes first).
+string substr (size_t pos = 0, size_t len = npos) const;
+
+// Returns the length of the string, in terms of bytes.
+size_t length() const noexcept;
+
+// Searches the string for the first occurrence of the sequence specified by its arguments.
+// When pos is specified, the search only includes characters at or after position pos, ignoring any possible occurrences that include characters before pos.
+size_t find (const string& str, size_t pos = 0) const;
+
+string to_string(int value);
+
+
+// upper or lower a string
+for (auto & c: str) c = toupper(c);
+for (auto & c: str) c = tolower(c);
+```
+
+### algorithm
+
+```cpp
+/* --------- reverse ----- begin ------------------------- */
+//  逆序字符串，或者vector容器或者数组
+
+template<class BidirIt>
+void reverse(BidirIt first, BidirIt last);
+
+// usage
+vector<int> v{1,2,3};
+reverse(begin(v), end(v));  // 3,2,1
+int a[] = {4,5,6,7};
+reverse(begin(a), end(a));  // 7,6,5,4
+
+/* --------- reverse ----- end --------------------------- */
+
+
+```
 
 
 
