@@ -29,6 +29,6 @@ networksetup -setv6off Wi-Fi	 // 关闭ipv6
 `eGpzLmpzQG91dGxvb2suY29tCg==` 
 
 ```
-echo xjs.js@outlook.com | base64								// encode
+echo xjs.js@outlook.com | base64					// encode
 echo eGpzLmpzQG91dGxvb2suY29tCg== | base64 -D		// decode
 ```
