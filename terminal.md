@@ -23,3 +23,12 @@ networksetup -setv6off Wi-Fi	 // 关闭ipv6
 
 
 
+### V2EX的E-mail
+
+最近找工作，看到V友们经常不留正常的E-mail，而是留下一段神秘代码
+`eGpzLmpzQG91dGxvb2suY29tCg==` 
+
+```
+echo xjs.js@outlook.com | base64								// encode
+echo eGpzLmpzQG91dGxvb2suY29tCg== | base64 -D		// decode
+```
