@@ -30,6 +30,13 @@ curl ifconfig.me               //  external ip address
 
 
 
+```
+// macOS
+du -d 1 -h									//  查看当前文件夹下文件的大小
+// linux
+du -h --max-depth=1					//  查看当前文件夹下文件的大小
+```
+
 
 
 
